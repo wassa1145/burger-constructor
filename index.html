@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Собери гамбургер</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="logo">Собери гамбургер</div>
+            <div class="header__line"></div>
+        </header>
+        <main>
+            <section class="section">
+                <div class="section__wrapper">
+                    <div class="wrapper">
+                        <form class="form">
+                            <h2 class="title">Выберите</h2>
+                            <div class="section__content section-size">
+                                <p class="subtitle">Размер</p>
+                                <div>
+                                    <div>
+                                        <input type="radio" name="size" value="small" checked class="section-size__input">
+                                        <label class="form__label">Маленький (50 рублей, 20 калорий)</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="size" value="big" class="section-size__input">
+                                        <label class="form__label">Большой (100 рублей, 40 калорий)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section__content section-stuffinge">
+                                <p class="subtitle">Начинка</p>
+                                <div>
+                                    <div>
+                                        <input type="radio" name="stuffing" value="cheese" checked class="section-stuffinge__input">
+                                        <label class="form__label">С сыром (+10 рублей, +20 калорий)</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="stuffing" value="salad" class="section-stuffinge__input">
+                                        <label class="form__label">С салатом (+20 рублей, +5 калорий)</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="stuffing" value="potatoes" class="section-stuffinge__input">
+                                        <label class="form__label">С картофелем (+15 рублей, +10 калорий)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section__content section-topping">
+                                <p class="subtitle">Добавки</p>
+                                <div>
+                                    <div>
+                                        <input type="checkbox" name="topping" value="spices" class="section-topping__input">
+                                        <label class="form__label">Посыпать приправой (+15 рублей, +0 калорий)</label>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" name="topping" value="mayonnaise" class="section-topping__input">
+                                        <label class="form__label">Полить майонезом (+20 рублей, +5 калорий)</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn-cart" type="button">Заказать</button>
+                            </div>
+                        </form>
+                        <div class="order">
+                            <h2 class="title">Ваш гамбургер</h2>
+                            <div class="section__content order__content">
+                                <p>Размер:
+                                    <span id="hamburger-size"></span>
+                                </p>
+                                <p>Начинка:
+                                    <span id="hamburger-stuffing"></span>
+                                </p>
+                                <p>
+                                    <span id="hamburger-calories"></span>
+                                    <span>калорий</span>
+                                </p>
+                                <p id="hamburger-topping"></p>
+                                <div class="order__price">
+                                    <hr class="line">
+                                    <span>Стоимость:</span>
+                                    <span id="hamburger-price"></span>
+                                    <span>рублей</span>
+                                </div>
+                            </div>
+                            <img src="img/img1.jpg" alt="гамбургер" class="order__image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer__text text">&COPY; Burger House 2021</p>
+        </footer>
+    </div>
+   
+    <script src="js/main.js"></script>
+</body>
+</html>
